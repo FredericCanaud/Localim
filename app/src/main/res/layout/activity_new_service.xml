@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".views.NewServiceActivity"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ToolbarColoredBackArrow"/>
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent"
+                        tools:context=".views.NewServiceActivity"
+                        android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center"
+                          android:orientation="vertical"
+                          android:padding="30dp"
+                          style="@style/globalBackground">
+                <TextView
+                        android:text="@string/creation_d_un_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:textSize="24sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+                <EditText
+                        android:id="@+id/et_title"
+                        android:inputType="text"
+                        android:importantForAutofill="no"
+                        android:hint="@string/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/basicText"/>
+
+                <EditText
+                        android:id="@+id/et_description"
+                        android:inputType="textMultiLine"
+                        android:importantForAutofill="no"
+                        android:hint="@string/et_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        style="@style/basicText"/>
+
+
+                <RadioGroup
+                        android:id="@+id/rb_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/rb_divers"
+                        style="@style/basicText">
+
+                    <TextView
+                            android:text="@string/categorie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"/>
+                    <RadioButton
+                            android:id="@+id/rb_bricolage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bricolage_et_jardinage"
+                            android:textColor="@color/white"/>
+
+                    <RadioButton
+                            android:id="@+id/rb_cours"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cours_particuliers"
+                            android:textColor="@color/white"/>
+
+                    <RadioButton
+                            android:id="@+id/rb_covoiturage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/covoiturage"
+                            android:textColor="@color/white"/>
+
+                    <RadioButton
+                            android:id="@+id/rb_cuisine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cuisine"
+                            android:textColor="@color/white"/>
+
+                    <RadioButton
+                            android:id="@+id/rb_domicile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/service_domicile"
+                            android:textColor="@color/white"/>
+                    <RadioButton
+                            android:id="@+id/rb_divers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/divers"
+                            android:textColor="@color/white"/>
+                </RadioGroup>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="20dp">
+                    <ImageView
+                            android:id="@+id/img_to_upload"
+                            android:contentDescription="@string/image_du_service"
+                            android:src="@drawable/service_placeholder"
+                            android:tag="placeholder"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp" />
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="25dp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry">
+                        <Button
+                                android:id="@+id/choisir_une_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/choisir_une_image"
+                                android:onClick="chooseFile"/>
+                        <Button
+                                android:id="@+id/photo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/prendre_une_photo"
+                                android:onClick="takePhoto"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                        android:id="@+id/et_place"
+                        android:inputType="text"
+                        android:importantForAutofill="no"
+                        android:hint="@string/adresse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingTop="30dp"
+                        style="@style/basicText" />
+
+                <TextView
+                        android:text="@string/placez_un_rep_re_sur_la_carte_pour_d_terminer_o_vous_tes_disponible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+                    <com.example.localim.views.helpers.CustomMapView
+                            android:id="@+id/map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="vertical"/>
+                </LinearLayout>
+
+                <EditText
+                        android:id="@+id/et_hours"
+                        android:inputType="number"
+                        android:importantForAutofill="no"
+                        android:hint="@string/nombre_d_heures_necessaires"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:layout_marginBottom="20dp"
+                        style="@style/basicText"/>
+                <Button
+                        android:id="@+id/btn_new_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/cr_er_votre_service"
+                        android:onClick="submit"/>
+                <Button
+                        style="?android:attr/button"
+                        android:id="@+id/button_upload_resume"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:text="@string/upload_resume"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

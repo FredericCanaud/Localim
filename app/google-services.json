@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "746373793301",
+    "project_id": "localimoges-17c14",
+    "storage_bucket": "localimoges-17c14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746373793301:android:710738889e80a1b536701c",
+        "android_client_info": {
+          "package_name": "com.example.localim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746373793301-t7rig3u08e1cp7sujgupjcd79esglv3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrRPBsGksmtouGHJmrvR-9JWfIAAUDDXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746373793301-t7rig3u08e1cp7sujgupjcd79esglv3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

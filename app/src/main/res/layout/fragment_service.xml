@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Si changement de layout, changer ServiceAdapter.java -> parentLayout dans la classe privée ServiceViewHolder -->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/blockService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        style="@style/serviceAccueil">
+
+    <!-- id du service -->
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="@string/service_title"
+            android:textAlignment="center"
+            android:id="@+id/serviceTitle"
+            style="@style/titreServiceAccueil"/>
+
+    <ImageView
+            android:id="@+id/serviceImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/image_du_service">
+    </ImageView>
+    <TextView
+            android:text="@string/description_example"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/serviceDescription"
+            android:gravity="center"
+            android:layout_weight="3"
+            style="@style/descriptionServiceAccueil"/>
+</LinearLayout>

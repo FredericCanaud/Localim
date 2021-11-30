@@ -1,0 +1,56 @@
+DatabaseReference ref = FirebaseDatabase.getInstance("https://localimoges-17c14-default-rtdb.europe-west1.firebasedatabase.app").getReference();
+ref.child("services").child("1").child("title").setValue("Homme de ménage");
+ref.child("services").child("1").child("description").setValue("Je suis capable de passer chez vous un petit coup de plumeau !");
+ref.child("services").child("1").child("image_url").setValue("homme-menage.bmp");
+ref.child("services").child("1").child("place").setValue("IUT Du Limousin, 87000 Limoges");
+ref.child("services").child("1").child("point").child("latitude").setValue("45.835393");
+ref.child("services").child("1").child("point").child("longitude").setValue("1.230791");
+ref.child("services").child("1").child("hours").setValue("10");
+ref.child("services").child("1").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.child("services").child("2").child("title").setValue("Bobby le bricoleur");
+ref.child("services").child("2").child("description").setValue("Je répare tout, même les vidéoprojecteurs qui tombent des plafonds !");
+ref.child("services").child("2").child("image_url").setValue("bricoleur.bmp");
+ref.child("services").child("2").child("place").setValue("New Jabes, 87000 Limoges");
+ref.child("services").child("2").child("point").child("latitude").setValue("45.829875");
+ref.child("services").child("2").child("point").child("longitude").setValue("1.253236");
+ref.child("services").child("2").child("hours").setValue("10");
+ref.child("services").child("2").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.child("services").child("3").child("title").setValue("Jardinage à l'Évéché");
+ref.child("services").child("3").child("description").setValue("Le Jardin de l'Évéché propose un poste un jardinier pour s'occuper des petits fleurs.");
+ref.child("services").child("3").child("image_url").setValue("jardinier.bmp");
+ref.child("services").child("3").child("place").setValue("Jardin Botanique de l'Évéché, 87000 Limoges");
+ref.child("services").child("3").child("point").child("latitude").setValue("45.827754");
+ref.child("services").child("3").child("point").child("longitude").setValue("1.267826");
+ref.child("services").child("2").child("hours").setValue("15");
+ref.child("services").child("3").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.child("services").child("4").child("title").setValue("Cours de piano");
+ref.child("services").child("4").child("description").setValue("L'IUT aurait bien besoin d'un petit coup de plumeau");
+ref.child("services").child("4").child("image_url").setValue("piano.bmp");
+ref.child("services").child("4").child("place").setValue("IUT Du Limousin, 87000 Limoges");
+ref.child("services").child("4").child("point").child("latitude").setValue("45.835393");
+ref.child("services").child("4").child("point").child("longitude").setValue("1.230791");
+ref.child("services").child("5").child("hours").setValue("50");
+ref.child("services").child("4").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.child("services").child("5").child("title").setValue("Livreur à temps partiel");
+ref.child("services").child("5").child("description").setValue("Je livre tous vos colis et vos courses à domicile !");
+ref.child("services").child("5").child("image_url").setValue("livreur.bmp");
+ref.child("services").child("5").child("place").setValue("182 Rue Armand Dutreix, 87000 Limoges");
+ref.child("services").child("5").child("point").child("latitude").setValue("45.831892");
+ref.child("services").child("5").child("point").child("longitude").setValue("1.235360");
+ref.child("services").child("5").child("hours").setValue("20");
+ref.child("services").child("5").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.child("services").child("5").child("title").setValue("Détective débutant");
+ref.child("services").child("5").child("description").setValue("Besoin de moi sur une de vos enquêtes ? J'arrive !");
+ref.child("services").child("5").child("image_url").setValue("detective.bmp");
+ref.child("services").child("5").child("place").setValue("Place Denis Dussoubs, 87000 Limoges");
+ref.child("services").child("5").child("point").child("latitude").setValue("45.832880");
+ref.child("services").child("5").child("point").child("longitude").setValue("1.255557");
+ref.child("services").child("5").child("hours").setValue("5");
+ref.child("services").child("5").child("user_id").setValue("UEdnLjOuPgWXEoa1Kh1gaCms1de2");
+
+ref.push();

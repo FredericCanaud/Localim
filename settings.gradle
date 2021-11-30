@@ -1,0 +1,2 @@
+rootProject.name = "LocaLim"
+include ':app'

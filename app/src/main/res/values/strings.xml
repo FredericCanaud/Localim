@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Localim</string>
+
+    <string name="label_emailpassword">Connexion</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="sign_out">Se déconnecter</string>
+    <string name="disconnect">Déconnecter</string>
+    <string name="loading">Chargement…</string>
+    <string name="signed_out">Déconnecté</string>
+
+    <string name="hint_email">Adresse mail</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_name">Nom</string>
+    <string name="hint_photo">Lien vers la photo</string>
+
+    <string name="logout">Souhaitez-vous bien vous déconnecter ?</string>
+    <string name="verify">Vérifier</string>
+
+    <string name="hint_verification_code">Code de vérification</string>
+    <string name="status_verification_succeeded">Verification réussie !</string>
+    <string name="status_sign_in_failed">Connexion échouée.</string>
+    <string name="firebase_status_fmt">Utilisateur Firebase : %s</string>
+
+    <string name="firebase_too_manny_attempts">L\'accès à votre compte a été temporairement bloqué à cause de nombreuses tentatives de connexion échouées. Veuillez réessayer plus tard. </string>
+    <string name="firebase_network_error">Une erreur de réseau est intervenue. Veuillez réessayer avec une meilleure connexion. </string>
+    <string name="firebase_password_not_enough">Le mot de passe n\'est pas suffisant. (Au moins 6 caractères)</string>
+    <string name="firebase_no_mail">Aucun utilisateur ne correspond à l\'adresse mail saisie.</string>
+    <string name="firebase_bad_email_address">Le format de votre adresse mail est incorrect.</string>
+    <string name="firebase_invalid_password">Le mot de passe saisi est invalide.</string>
+
+    <string name="button_upload">Importer un fichier</string>
+    <string name="button_download">Exporter un fichier</string>
+    <string name="delete_file">Supprimer le fichier</string>
+    <string name="download_in_memory">Exporter dans l\'appli</string>
+    <string name="download_in_file">Exporter en fichier</string>
+    <string name="download_via_url">Exporter via url</string>
+    <string name="upload_from_memory">Import depuis mémoire de l\'appli</string>
+    <string name="upload_from_stream">Import d\'une photo</string>
+    <string name="upload_from_file">Import d\'un fichier</string>
+    <string name="upload_resume">Reprendre l\'import</string>
+    <string name="upload_paused">Import en suspend</string>
+    <string name="metadata_get">Obtenir métadonnées</string>
+    <string name="metadata_update">Changer métadonnées</string>
+
+    <string name="cloud_storage">Stockage dans le cloud</string>
+    <string name="creation_d_un_service">Créez votre propre service !</string>
+    <string name="choisir_une_image">Choisir une image</string>
+    <string name="et_title">Titre…</string>
+    <string name="et_description">Description…</string>
+    <string name="adresse">Adresse…</string>
+    <string name="nombre_d_heures_necessaires">Nombre d\'heures nécessaires…</string>
+    <string name="prendre_une_photo">Prendre une photo</string>
+    <string name="placez_un_rep_re_sur_la_carte_pour_d_terminer_o_vous_tes_disponible">Placez un repère sur la carte
+        pour déterminer où vous êtes disponible :
+    </string>
+    <string name="categorie">Catégorie : </string>
+
+    <string name="bricolage_et_jardinage">Bricolage et Jardinage</string>
+    <string name="cours_particuliers">Cours particuliers</string>
+    <string name="service_domicile">Service à domicile</string>
+    <string name="covoiturage">Covoiturage</string>
+    <string name="cuisine">Cuisine</string>
+    <string name="divers">Divers</string>
+    <string name="cr_er_votre_service">Créer votre service</string>
+    <string name="image_du_service">Image du service</string>
+    <string name="nouveau_service">Nouveau Service</string>
+    <string name="toutes_les_cat_gories">Toutes les catégories</string>
+    <string name="connectez_vous_pour_acc_der_aux_diff_rentes_parties_de_l_application">Connectez-vous pour accéder aux
+        différentes parties de l\'application !
+    </string>
+    <string name="titre">Titre</string>
+    <string name="description_example">Ceci est la petite description de mon service</string>
+    <string name="tag">Catégorie</string>
+    <string name="hours">Nombre d\'heures nécessaires :</string>
+    <string name="address">Adresse</string>
+    <string name="address_example">Adresse : 25 rue du grand chemin, 88666 Somewhere</string>
+    <string name="description">Description</string>
+    <string name="service_title">Titre de mon service</string>
+    <string name="ok">OK</string>
+    <string name="pause">Pause</string>
+    <string name="cancel">Annuler</string>
+    <string name="required">Requis.</string>
+    <string name="verification">Vous n\'avez pas encore vérifié votre adresse mail. Veuillez cliquer sur le lien envoyé
+        par mail, ou bien sur le bouton Vérifier pour vous renvoyer un mail.
+    </string>
+    <string name="successful_authentification">Bien joué, vous vous êtes authentifié !</string>
+    <string name="firebase_address_already_used">L\'adresse mail saisie est déjà utilisée !</string>
+    <string name="successful_new_service">Votre service a bien été sauvegardé !</string>
+</resources>
